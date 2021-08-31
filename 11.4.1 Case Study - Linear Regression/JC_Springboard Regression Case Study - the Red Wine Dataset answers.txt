@@ -1,0 +1,21 @@
+What can you infer about the nature of these variables, as output by the info() method?
+	They are all integers. quality might be categorical, and even subjective.
+
+Which variables might be suitable for regression analysis, and why? For those variables that aren't suitable for regression analysis, is there another type of statistical modeling for which they are suitable?
+	alcohol, sulphates, pH, density, total.sulfur.dioxide
+
+We can see so much about the quality variable just from this simple visualization. Answer yourself: what value do most wines have for quality? What is the minimum quality value below, and the maximum quality value? What is the range?
+	Most wins are a 6. The minimum quality is a 3 and the maximum is an 8. The range is 5
+
+But can you think of a problem with making this variable the dependent variable of regression analysis?
+	It would be a problem since quality isn't a continuous measurement.
+
+If you've never executed your own Seaborn pairplot before, just take a moment to look at the output. They certainly output a lot of information at once. What can you infer from it? What can you not justifiably infer from it?
+	each cell is a 2-variable correlation. the cells in the center diagonal are histograms of the vars values.
+
+How does color relate to extent of correlation?
+	Darker = weaker correlation, brighter = stronger correlation
+How might we use the plot to show us interesting relationships worth investigating?
+	look for variables with high correlation
+More precisely, what does the heatmap show us about the fixed acidity variable's relationship to the density variable?
+	It shows us that we should investigate it further.
